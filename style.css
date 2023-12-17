@@ -1,0 +1,116 @@
+.kusama-price {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #e6007a;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px #e6007b59;
+    margin: 10px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+#logoKusama {
+    height: 140px;
+    width: 110px;
+    margin-bottom: -110px;
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 5px;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 50px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+
+#board {
+    background-image: url("flappydotbg.png");
+}
+
+#board-container {
+    background-color: #e6007a;
+    width: 390px;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 40.6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    margin: 20px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+
+
+#space {
+    background-color: #e6007a;
+    width: 390px;
+    height: 43px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: calc(9% + 670px - 50px);
+    transform: translateX(-50%);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    animation: fadeIn 1.5s ease-in-out forwards, clickAnimation 1.5s ease infinite;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border: black;
+}
+
+
+canvas {
+    border: rgb(0, 0, 0)3px solid;
+    border-radius: 10px;
+
+}
+
+h1 {
+    color: #000000;
+    padding-top: 50px;
+    margin-bottom: 37px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
